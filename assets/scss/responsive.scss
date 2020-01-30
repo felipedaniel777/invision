@@ -1,0 +1,25 @@
+@media screen and (max-width: 1190px) {
+    .content-filters {
+        font-size: 14px;
+    }
+    .slider .slick__content, .slider .slick__content2{
+        padding: 20px;
+    }
+    .slider .slick__content .slick-btn, .slider .slick__content2 .slick-btn{
+        margin-top: 10px;
+        height: 28px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .footer__register{
+        width: 385px;
+    }
+}
+
+@media screen and (max-width: 1128px) {
+    .footer__register--btn{
+        top: 77px;
+    }
+}

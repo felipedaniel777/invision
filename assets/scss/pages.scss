@@ -1,0 +1,46 @@
+$font: 'Montserrat',
+sans-serif;
+$white: #fff;
+$light-grey: #eee;
+$grey: #767676;
+$purple: #58006D;
+$black: #111;
+
+.pages {
+    display: flex;
+    justify-content: center;
+    margin: 127px 0 108px 0;
+    nav {
+        ul {
+            width: 300px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .pages--etc{
+                border-radius: 100%;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                background: $white;
+                a{
+                    color: $black;
+                }
+            }
+            li {
+                background: $purple;
+                border-radius: 100%;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+              
+                a{
+                    color: $light-grey;
+                    line-height: 30px;
+                    font-weight: bold;
+                    font-size: 18px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

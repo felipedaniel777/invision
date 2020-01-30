@@ -1,0 +1,76 @@
+.button-spacing {
+  position: absolute;
+  bottom: 0; }
+
+.card__info {
+  height: 145px; }
+
+.results {
+  font-size: 12px;
+  letter-spacing: 0.8px;
+  color: #111;
+  padding-bottom: 10px; }
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .content__card {
+    width: 22%;
+    position: relative; }
+    .content__card .figures {
+      position: relative; }
+      .content__card .figures__front-img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: 1;
+        transition: opacity .3s linear;
+        cursor: pointer; }
+        .content__card .figures__front-img:hover {
+          opacity: 0; }
+    .content__card .figures:hover > .figures__front-image {
+      opacity: 0; }
+    .content__card img {
+      width: 100%; }
+    .content__card--p {
+      font-size: 12px;
+      background: #58006D;
+      color: #fff;
+      text-align: center;
+      width: 128px;
+      height: 20px;
+      line-height: 20px; }
+    .content__card--title {
+      text-transform: uppercase;
+      font-size: 12px;
+      padding: 5px 0; }
+    .content__card--price {
+      color: #767676;
+      font-size: 12px;
+      font-weight: bold;
+      text-decoration: line-through;
+      padding: 5px 0; }
+    .content__card--real-price {
+      color: #58006D;
+      font-size: 16px;
+      font-weight: bold; }
+    .content__card--btn {
+      color: #58006D;
+      border: 1px solid #58006D;
+      border-radius: 30px;
+      background: #fff;
+      width: 100%;
+      height: 35px;
+      margin-top: 18px;
+      cursor: pointer;
+      transition: all 250ms;
+      opacity: 0;
+      outline: none; }
+      .content__card--btn:hover {
+        background: #58006D;
+        color: #fff;
+        transition: all 250ms; }
+    .content__card:hover .content__card--btn {
+      opacity: 1; }

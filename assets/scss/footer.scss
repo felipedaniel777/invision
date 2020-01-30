@@ -1,0 +1,131 @@
+$font: 'Montserrat',
+sans-serif;
+$white: #fff;
+$light-grey: #eee;
+$grey: #767676;
+$purple: #58006D;
+$black: #111;
+
+.footer {
+    background-color: $light-grey;
+    padding: 42px 0;
+    margin-top: 108px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+    // footer register
+    &__register {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        width: 515px;
+        margin-right: 25px;
+        h2 {
+            font-size: 22px;
+            letter-spacing: 1px;
+            color: $black;
+            padding-bottom: 33px;
+        }
+        input {
+            width: 100%;
+            height: 45px;
+            border-radius: 30px;
+            border: none;
+            outline: none;
+            padding-left: 10px;
+        }
+        ::placeholder {
+            padding-left: 10px;
+        }
+        &--btn {
+            width: 151px;
+            height: 47px;
+            border-radius: 30px;
+            border: none;
+            background: #58006D;
+            color: $white;
+            cursor: pointer;
+            outline: none;
+            font-size: 16px;
+            position: absolute;
+            right: -10px;
+            top: 55px;
+            transition: all 250ms;
+
+            &:hover {
+                color: $purple;
+                background: $white;
+                transition: all 250ms;
+            }
+        }
+    }
+    &__icons {
+        padding-top: 62px;
+        display: flex;
+        align-items: center;
+        img{
+            padding-right: 16px;
+        }
+    }
+    // footer help
+    &__help {
+        width: 200px;
+        .footer__help--p {
+            font-size: 12px;
+            text-decoration: none;
+            color: $black;
+            line-height: 25px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    //footer delivery
+    &__delivery {
+        width: 300px;
+        &--p {
+            font-size: 12px;
+            text-decoration: none;
+            color: $black;
+            line-height: 25px;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .footer__buy {
+            padding-top: 58px;
+        }
+        img {
+            width: 100%;
+        }
+    }
+    h3 {
+        font-size: 16px;
+        font-weight: bold;
+        color: $black;
+        padding-bottom: 22px;
+    }
+}
+// icons
+.icon-facebook-img{
+    font-size: 25px;
+    margin-right: 16px;
+    color: #58006D;
+}
+.icon-twitter-img{
+    font-size: 25px;
+    padding-right: 16px;
+    color: #58006D;
+}
+.coment{
+    margin-top: 2px;
+    background: $light-grey;
+    .coment__p {
+        font-size: 14px;
+        color: $grey;
+        line-height: 17px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}

@@ -1,0 +1,275 @@
+$font: 'Montserrat',
+sans-serif;
+$white: #fff;
+$light-grey: #eee;
+$grey: #767676;
+$purple: #58006D;
+$black: #111;
+
+// hellpers
+.padding-li {
+    padding: 15px 0;
+}
+.padding-li-input{
+    padding: 5px 0;
+}
+
+.filters-separators {
+    display: none;
+    width: 50%;
+    height: 750px;
+    background: $white;
+    position: fixed;
+    top: 76px;
+    z-index: 1;
+    overflow: auto;
+
+    &__container {
+        padding: 0 100px;
+    }
+
+    h1 {
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
+        padding: 80px 0 100px 0;
+    }
+
+    &__products {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 80px;
+        align-items: center;
+
+        &--btn {
+            border: 1px solid $purple;
+            border-radius: 30px;
+            background: $white;
+            color: $purple;
+            height: 35px;
+            width: 180px;
+            cursor: pointer;
+            outline: none;
+            transition: all 250ms;
+
+            &:hover {
+                background: $purple;
+                color: $white;
+            }
+        }
+
+        a {
+            color: $black;
+        }
+    }
+
+    h2 {
+        font-size: 14px;
+        font-weight: bold;
+        padding-bottom: 20px;
+    }
+
+    a {
+        font-size: 14px;
+    }
+
+    &__rank {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 70px;
+    }
+
+    &__colors {
+        padding-bottom: 70px;
+
+        &--red {
+            border: none;
+            color: red;
+        }
+
+        ul {
+            display: flex;
+        }
+    }
+
+    &__size {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 70px;
+    }
+
+    .material {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 70px;
+    }
+
+    .colection {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 70px;
+    }
+
+}
+
+// inputs
+.rank__btn:checked{
+    position: relative;
+}
+.check__modifier--input:checked::after {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: $black;
+    position: absolute;
+    top: 50%;
+    left: 49%;
+    transform: translate(-44%, -57%);
+    border-radius: 50%;
+}
+
+.check__modifier--black:checked {
+    background-image: url("../img/icon-check.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.check__modifier--black2:checked {
+    background-image: url("../img/icon-check.png");
+    background-repeat: no-repeat;
+    background-position: 1px 2px;
+}
+
+.check__modifier:checked {
+    background-image: url("../img/icon-check-white.png");
+    background-repeat: no-repeat;
+}
+
+input[type="radio"].rank__btn {
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    border: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+
+    &--white {
+        border: 1px solid #BDBDBD;
+    }
+}
+
+input[type="checkbox"].color__list-btn {
+    border-radius: 100%;
+    width: 15px;
+    height: 15px;
+    border: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+
+    &--red {
+        background-color: #F36;
+    }
+
+    &--light-blue {
+        background-color: #33E1FF;
+    }
+
+    &--ocean-blue {
+        background-color: #39F;
+    }
+
+    &--green {
+        background-color: #2AC940;
+    }
+
+    &--yellow {
+        background-color: #F3CA3E;
+    }
+
+    &--orange {
+        background-color: #FA9917;
+    }
+
+    &--tomato {
+        background-color: #FF5F58;
+    }
+
+    &--white {
+        background-color: #fff;
+        border: 1px solid #BDBDBD;
+    }
+
+    &--light-grey {
+        background-color: #F2F2F2;
+        border: 1px solid #BDBDBD;
+    }
+
+    &--grey {
+        background-color: #BDBDBD;
+    }
+
+    &--brown {
+        background-color: #4F4F4F;
+    }
+
+    &--black {
+        background-color: #000;
+    }
+
+    &--purple {
+        background-color: #1C029B;
+    }
+
+    &--blue {
+        background-color: #0059D0;
+    }
+
+    &--pink {
+        background-color: #FB00CB;
+    }
+
+    &--light-pink {
+        background-color: #F467EA;
+    }
+
+}
+
+input[type="checkbox"].size__btn__color {
+    border-radius: 4px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+
+    &--white {
+        border: 1px solid #BDBDBD;
+    }
+}
+
+.size__icon {
+    display: flex;
+    justify-content: space-between;
+}
+
+// icons
+.icon-up-arow:before {
+    content: "\e901";
+    color: $black;
+    padding-right: 5px;
+}
+
+.icon-close:before {
+    content: "\e90b";
+
+}
+
+.close-filters {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: $black;
+}

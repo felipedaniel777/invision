@@ -1,0 +1,29 @@
+.pages {
+  display: flex;
+  justify-content: center;
+  margin: 127px 0 108px 0; }
+  .pages nav ul {
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    .pages nav ul .pages--etc {
+      border-radius: 100%;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      background: #fff; }
+      .pages nav ul .pages--etc a {
+        color: #111; }
+    .pages nav ul li {
+      background: #58006D;
+      border-radius: 100%;
+      width: 30px;
+      height: 30px;
+      text-align: center; }
+      .pages nav ul li a {
+        color: #eee;
+        line-height: 30px;
+        font-weight: bold;
+        font-size: 18px;
+        text-decoration: none; }

@@ -1,0 +1,101 @@
+$font: 'Montserrat',
+sans-serif;
+$white: #fff;
+$light-grey: #eee;
+$grey: #767676;
+$purple: #58006D;
+$black: #111;
+.button-spacing{
+    position: absolute;
+    bottom: 0;
+}
+.card__info{
+    height: 145px;
+}
+// resultados da pesquisa
+.results{
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    color: $black;
+    padding-bottom: 10px;
+}
+// conteudo
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    &__card{
+        width: 22%;
+        position: relative;
+        .figures{
+            position: relative;
+            &__front-img{
+                position: absolute;
+                top:0;
+                left:0;
+                overflow: hidden;
+                z-index: 1;
+                transition: opacity .3s linear;
+                cursor: pointer;
+                &:hover{
+                    opacity: 0;
+                }
+            }
+        }
+        .figures:hover > .figures__front-image{
+            opacity: 0;
+        }
+        img{
+            width: 100%;
+        }
+        &--p{
+            font-size: 12px;
+            background: $purple;
+            color: $white;
+            text-align: center;
+            width: 128px;
+            height: 20px;
+            line-height: 20px;
+        }
+        &--title{
+            text-transform: uppercase;
+            font-size: 12px;
+            padding: 5px 0;
+        }
+        &--price{
+            color: $grey;
+            font-size: 12px;
+            font-weight: bold;
+            text-decoration: line-through;
+            padding: 5px 0;
+        }
+        &--real-price{
+            color: $purple;
+            font-size: 16px;
+            font-weight: bold;
+
+        }
+        &--btn{
+            color: $purple;
+            border: 1px solid $purple;
+            border-radius: 30px;
+            background: $white;
+            width: 100%;
+            height: 35px;
+            margin-top: 18px;
+            cursor: pointer;
+            transition: all 250ms;
+            opacity: 0;
+            outline: none;
+            &:hover{
+                background: $purple;
+                color: $white;
+                transition: all 250ms;
+            }
+        }
+        &:hover  .content__card--btn{
+            opacity: 1;
+        }
+    }
+    
+}
